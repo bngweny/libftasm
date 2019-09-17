@@ -18,7 +18,7 @@
 void logit 				(char * str);
 
 void test_ft_bzero 		(void);
-// void test_ft_strcat		(void);
+void test_ft_strcat		(void);
 void test_ft_isalpha	(void);
 void test_ft_isdigit	(void);
 void test_ft_isalnum	(void);
@@ -28,7 +28,7 @@ void test_ft_toupper	(void);
 void test_ft_tolower	(void);
 void test_ft_puts		(void);
 void test_ft_strlen		(void);
-// void test_ft_memset		(void);
+void test_ft_memset		(void);
 // void test_ft_memcpy		(void);
 // void test_ft_strdup		(void);
 // void test_ft_indexof	(void);
@@ -40,18 +40,18 @@ void test_ft_strlen		(void);
 int main (void)
 {
 
-	test_ft_bzero();
-	// test_ft_strcat();
-	test_ft_isalpha();
-	test_ft_isdigit();
-	test_ft_isalnum();
-	test_ft_isascii();
-	test_ft_isprint();
-	test_ft_toupper();
-	test_ft_tolower();
-	test_ft_puts();
+	// test_ft_bzero();
+	test_ft_strcat();
+	// test_ft_isalpha();
+	// test_ft_isdigit();
+	// test_ft_isalnum();
+	// test_ft_isascii();
+	// test_ft_isprint();
+	// test_ft_toupper();
+	// test_ft_tolower();
+	// test_ft_puts();
 	// test_ft_strlen();
-	// test_ft_memset();
+	test_ft_memset();
 	// test_ft_memcpy();
 	// test_ft_strdup();
 	// test_ft_indexof();
@@ -273,52 +273,52 @@ void test_ft_puts (void)
 	ft_puts("foo bar baz");
 }
 
-// void test_ft_strcat (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strcat
-// 	** -------------------------------------------------------------------------
-// 	**/
+void test_ft_strcat (void)
+{
+	/**
+	** -------------------------------------------------------------------------
+	** ft_strcat
+	** -------------------------------------------------------------------------
+	**/
 
-// 	logit("ft_strcat");
+	logit("ft_strcat");
 
-// 	char		toast[7] = "abc";
-// 	char		chips[4] = "def";
+	char		toast[7] = "abc";
+	char		chips[4] = "def";
 
-// 	toast[3] = '\0';
-// 	toast[6] = '\0';
+	toast[3] = '\0';
+	toast[6] = '\0';
 
-// 	printf("string 1 = %s\n", toast);
-// 	printf("string 2 = %s\n", chips);
-// 	printf("  result = %s\n", ft_strcat(toast, chips));
+	printf("string 1 = %s\n", toast);
+	printf("string 2 = %s\n", chips);
+	printf("  result = %s\n", ft_strcat(toast, chips));
 
-// }
+}
 
-// void test_ft_memset (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_memset
-// 	** -------------------------------------------------------------------------
-// 	**/
+void test_ft_memset (void)
+{
+	/**
+	** -------------------------------------------------------------------------
+	** ft_memset
+	** -------------------------------------------------------------------------
+	**/
 
-// 	logit("ft_memset");
+	logit("ft_memset");
 
-// 	char	mems[4];
+	char	mems[4];
 
-// 	ft_bzero(mems, 4);
-// 	printf("str[0] = %d\n", mems[0]);
-// 	printf("str[1] = %d\n", mems[1]);
-// 	printf("str[2] = %d\n", mems[2]);
-// 	printf("str[3] = %d\n", mems[3]);
-// 	printf("--- memseting with 'a' ---\n");
-// 	ft_memset(mems, 'a', 4);
-// 	printf("str[0] = %c (%d)\n", mems[0], mems[0]);
-// 	printf("str[1] = %c (%d)\n", mems[1], mems[1]);
-// 	printf("str[2] = %c (%d)\n", mems[2], mems[2]);
-// 	printf("str[3] = %c (%d)\n", mems[3], mems[3]);
-// }
+	ft_bzero(mems, 4);
+	printf("str[0] = %d\n", mems[0]);
+	printf("str[1] = %d\n", mems[1]);
+	printf("str[2] = %d\n", mems[2]);
+	printf("str[3] = %d\n", mems[3]);
+	printf("--- memseting with 'a' ---\n");
+	ft_memset(mems, 'a', 4);
+	printf("str[0] = %c (%d)\n", mems[0], mems[0]);
+	printf("str[1] = %c (%d)\n", mems[1], mems[1]);
+	printf("str[2] = %c (%d)\n", mems[2], mems[2]);
+	printf("str[3] = %c (%d)\n", mems[3], mems[3]);
+}
 
 // void test_ft_memcpy (void)
 // {
