@@ -18,9 +18,9 @@ SRC				= $(DIR_SRC)/ft_isalpha.s \
 				  $(DIR_SRC)/ft_puts.s \
 				  $(DIR_SRC)/ft_strlen.s \
 				  $(DIR_SRC)/ft_toupper.s \
-				  $(DIR_SRC)/ft_tolower.s
-				#   $(DIR_SRC)/ft_strcat.s \
-				#   $(DIR_SRC)/ft_memset.s \
+				  $(DIR_SRC)/ft_tolower.s \
+				  $(DIR_SRC)/ft_strcat.s \
+				  $(DIR_SRC)/ft_memset.s
 				#   $(DIR_SRC)/ft_memcpy.s \
 				#   $(DIR_SRC)/ft_strdup.s \
 				#   $(DIR_SRC)/ft_cat.s \
