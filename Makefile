@@ -9,16 +9,16 @@ FLAG			= -Wall -Werror -Wextra -pedantic
 INCS			= -I ./inc
 LIBS			=
 
-SRC				= $(DIR_SRC)/ft_isalpha.s
-				#   $(DIR_SRC)/ft_bzero.s \
-				#   $(DIR_SRC)/ft_strlen.s \
-				#   $(DIR_SRC)/ft_isdigit.s \
-				#   $(DIR_SRC)/ft_isalnum.s \
-				#   $(DIR_SRC)/ft_isascii.s \
-				#   $(DIR_SRC)/ft_isprint.s \
-				#   $(DIR_SRC)/ft_toupper.s \
-				#   $(DIR_SRC)/ft_tolower.s \
-				#   $(DIR_SRC)/ft_puts.s \
+SRC				= $(DIR_SRC)/ft_isalpha.s \
+				  $(DIR_SRC)/ft_isprint.s \
+				  $(DIR_SRC)/ft_isascii.s \
+				  $(DIR_SRC)/ft_isdigit.s \
+				  $(DIR_SRC)/ft_isalnum.s \
+				  $(DIR_SRC)/ft_bzero.s	\
+				  $(DIR_SRC)/ft_puts.s \
+				  $(DIR_SRC)/ft_strlen.s \
+				  $(DIR_SRC)/ft_toupper.s \
+				  $(DIR_SRC)/ft_tolower.s
 				#   $(DIR_SRC)/ft_strcat.s \
 				#   $(DIR_SRC)/ft_memset.s \
 				#   $(DIR_SRC)/ft_memcpy.s \
