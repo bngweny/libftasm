@@ -20,6 +20,9 @@
 ; .len:   equ     $ - msg
 
 
+;RAX is return REGISTER
+;REGISTERS RECEIVE DATA IN ORDER RDI,RSI,RDX,RCX, R8, R9
+
 global    start
 
           section   .text
