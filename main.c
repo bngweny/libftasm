@@ -29,8 +29,8 @@ void test_ft_tolower	(void);
 void test_ft_puts		(void);
 void test_ft_strlen		(void);
 void test_ft_memset		(void);
-// void test_ft_memcpy		(void);
-// void test_ft_strdup		(void);
+void test_ft_memcpy		(void);
+void test_ft_strdup		(void);
 // void test_ft_indexof	(void);
 // void test_ft_strequ		(void);
 // void test_ft_strchr		(void);
@@ -52,8 +52,8 @@ int main (void)
 	// test_ft_puts();
 	// test_ft_strlen();
 	test_ft_memset();
-	// test_ft_memcpy();
-	// test_ft_strdup();
+	test_ft_memcpy();
+	test_ft_strdup();
 	// test_ft_indexof();
 	// test_ft_strequ();
 	// test_ft_strchr();
@@ -320,71 +320,71 @@ void test_ft_memset (void)
 	printf("str[3] = %c (%d)\n", mems[3], mems[3]);
 }
 
-// void test_ft_memcpy (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_memcpy
-// 	** -------------------------------------------------------------------------
-// 	**/
+void test_ft_memcpy (void)
+{
+	/**
+	** -------------------------------------------------------------------------
+	** ft_memcpy
+	** -------------------------------------------------------------------------
+	**/
 
-// 	logit("ft_memcpy");
+	logit("ft_memcpy");
 
-// 	char	memc1[10]	= "123456789";
-// 	char	memc2[5]	= "abcd";
+	char	memc1[10]	= "123456789";
+	char	memc2[5]	= "abcd";
 
-// 	printf("str1 = %s\n", memc1);
-// 	printf("str2 = %s\n", memc2);
-// 	printf("\n");
-// 	printf("str1 : %3d %3d %3d %3d %3d\n", memc1[0], memc1[1], memc1[2], memc1[3], memc1[4]);
-// 	printf("str2 : %3d %3d %3d %3d %3d\n", memc2[0], memc2[1], memc2[2], memc2[3], memc2[4]);
-// 	printf("\n");
-// 	printf("--- memcpy str 2 into str 1, on 3 characters ---\n");
-// 	printf("\n");
-// 	ft_memcpy(memc1, memc2, 3);
-// 	printf("str1 = %s\n", memc1);
-// 	printf("str2 = %s\n", memc2);
-// 	printf("\n");
-// 	printf("str1 : %3d %3d %3d %3d %3d\n", memc1[0], memc1[1], memc1[2], memc1[3], memc1[4]);
-// 	printf("str2 : %3d %3d %3d %3d %3d\n", memc2[0], memc2[1], memc2[2], memc2[3], memc2[4]);
-// 	printf("\n");
+	printf("str1 = %s\n", memc1);
+	printf("str2 = %s\n", memc2);
+	printf("\n");
+	printf("str1 : %3d %3d %3d %3d %3d\n", memc1[0], memc1[1], memc1[2], memc1[3], memc1[4]);
+	printf("str2 : %3d %3d %3d %3d %3d\n", memc2[0], memc2[1], memc2[2], memc2[3], memc2[4]);
+	printf("\n");
+	printf("--- memcpy str 2 into str 1, on 3 characters ---\n");
+	printf("\n");
+	ft_memcpy(memc1, memc2, 3);
+	printf("str1 = %s\n", memc1);
+	printf("str2 = %s\n", memc2);
+	printf("\n");
+	printf("str1 : %3d %3d %3d %3d %3d\n", memc1[0], memc1[1], memc1[2], memc1[3], memc1[4]);
+	printf("str2 : %3d %3d %3d %3d %3d\n", memc2[0], memc2[1], memc2[2], memc2[3], memc2[4]);
+	printf("\n");
 
-// 	printf("\n");
-// 	printf("test with int\n");
+	printf("\n");
+	printf("test with int\n");
 
-// 	int a = 5;
-// 	int b = 4;
-// 	printf("a = %d\n", a);
-// 	printf("b = %d\n", b);
-// 	printf("--- memcpy a into b ---\n");
-// 	ft_memcpy(&b, &a, sizeof(int));
-// 	printf("a = %d\n", a);
-// 	printf("b = %d\n", b);
-// }
+	int a = 5;
+	int b = 4;
+	printf("a = %d\n", a);
+	printf("b = %d\n", b);
+	printf("--- memcpy a into b ---\n");
+	ft_memcpy(&b, &a, sizeof(int));
+	printf("a = %d\n", a);
+	printf("b = %d\n", b);
+}
 
-// void test_ft_strdup (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strdup
-// 	** -------------------------------------------------------------------------
-// 	**/
+void test_ft_strdup (void)
+{
+	/**
+	** -------------------------------------------------------------------------
+	** ft_strdup
+	** -------------------------------------------------------------------------
+	**/
 
-// 	logit("ft_strdup");
+	logit("ft_strdup");
 
-// 	char * tata = strdup("yolo");
-// 	char * toto = ft_strdup(tata);
-// 	char * titi = NULL;
+	char * tata = strdup("yolo powerful asbjkdkjafs askjbafhksb");
+	char * toto = strdup(tata);
+	char * titi = NULL;
 
-// 	printf(" original string : [%p] [%s]\n", tata, tata);
-// 	printf("duplicate string : [%p] [%s]\n", toto, toto);
+	printf(" original string : [%p] [%s]\n", tata, tata);
+	printf("duplicate string : [%p] [%s]\n", toto, toto);
 
-// 	printf("test with null :\n");
-// 	printf("titi = %s\n", titi);
-// 	titi = ft_strdup(NULL);
-// 	printf("titi = %s\n", titi);
+	printf("test with null :\n");
+	printf("titi = %s\n", titi);
+	titi = strdup(NULL);
+	printf("titi = %s\n", titi);
 
-// }
+}
 
 // void test_ft_indexof (void)
 // {

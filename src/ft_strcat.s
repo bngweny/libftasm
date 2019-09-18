@@ -2,8 +2,8 @@
 global _ft_strcat
 
 _ft_strcat:
-    push rbp        ;base pointer. points to current stack frame.  rsp points to top of current stack frame
-    mov rbp, rsp    ;snapshot of current stack frame
+    ; push rbp        ;base pointer. points to current stack frame.  rsp points to top of current stack frame
+    ; mov rbp, rsp    ;snapshot of current stack frame
     push rdi        ;push first register to stack
     push rsi        ;push second register to stack
     cmp rdi, 0      ;check if first argument is not null
@@ -16,7 +16,7 @@ looper:
     jmp looper
 
 copy:
-    mov al, [rsi]
+    mov al, [rsi]   ;mov byte to al which is a small register(8 bit)
     mov [rdi], al   ;mov byte(0) to first register
     inc rdi             ;point to next in first register
     inc rsi             ;inc counter
@@ -25,7 +25,7 @@ copy:
 
 endlooper:
     pop rsi
-    pop rdi
-    pop rbp
+    pop rdi         ;make rdi point to beginning address
+    ; pop rbp
     mov rax, rdi
     ret
