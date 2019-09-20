@@ -6,9 +6,9 @@ _ft_toupper:
     je endlooper
     mov rax, rdi
     cmp rax, 97
-    js endlooper
+    jl endlooper
     cmp rax, 122
-    js endlooper
+    jg endlooper
     sub rax, 32
 
 endlooper:

@@ -1,13 +1,11 @@
 NAME			= libfts.a
 TEST			= test
 TEST_CAT		= cat
-QPEREZ			= qperez
 
 CC				= gcc
 CC_ASM			= nasm
 FLAG			= -Wall -Werror -Wextra -pedantic
 INCS			= -I ./inc
-LIBS			=
 
 SRC				= $(DIR_SRC)/ft_isalpha.s \
 				  $(DIR_SRC)/ft_isprint.s \
@@ -22,9 +20,9 @@ SRC				= $(DIR_SRC)/ft_isalpha.s \
 				  $(DIR_SRC)/ft_strcat.s \
 				  $(DIR_SRC)/ft_memset.s \
 				  $(DIR_SRC)/ft_memcpy.s \
-				  $(DIR_SRC)/ft_strdup.s
-				#   $(DIR_SRC)/ft_cat.s \
-				#   $(DIR_SRC)/ft_indexof.s \
+				  $(DIR_SRC)/ft_strdup.s \
+				  $(DIR_SRC)/ft_cat.s
+				#   $(DIR_SRC)/ft_indexof.s
 				#   $(DIR_SRC)/ft_strequ.s \
 				#   $(DIR_SRC)/ft_strchr.s \
 				#   $(DIR_SRC)/ft_strclr.s \
@@ -91,12 +89,6 @@ $(TEST_CAT): $(NAME) main_cat.c
 	@$(CC) $(INCS) -L . -lfts main_cat.c -o $@
 	@printf "\e[32m------------------------------------------------------\e[0m\n"
 	@printf '\e[34m%-51s\e[0m\e[32m[✔]\e[0m\n' "created cat"
-	@printf "\e[32m------------------------------------------------------\e[0m\n"
-
-$(QPEREZ): $(NAME) main_qperez.c
-	@$(CC) $(INCS) -L . -lfts main_qperez.c -o $@
-	@printf "\e[32m------------------------------------------------------\e[0m\n"
-	@printf '\e[34m%-51s\e[0m\e[32m[✔]\e[0m\n' "created qperez"
 	@printf "\e[32m------------------------------------------------------\e[0m\n"
 
 .PHONY:	clean fclean re

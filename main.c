@@ -31,7 +31,7 @@ void test_ft_strlen		(void);
 void test_ft_memset		(void);
 void test_ft_memcpy		(void);
 void test_ft_strdup		(void);
-// void test_ft_indexof	(void);
+void test_ft_indexof	(void);
 // void test_ft_strequ		(void);
 // void test_ft_strchr		(void);
 // void test_ft_strclr		(void);
@@ -39,18 +39,17 @@ void test_ft_strdup		(void);
 
 int main (void)
 {
-
-	// test_ft_bzero();
+	test_ft_bzero();
 	test_ft_strcat();
-	// test_ft_isalpha();
-	// test_ft_isdigit();
-	// test_ft_isalnum();
-	// test_ft_isascii();
-	// test_ft_isprint();
-	// test_ft_toupper();
-	// test_ft_tolower();
-	// test_ft_puts();
-	// test_ft_strlen();
+	test_ft_isalpha();
+	test_ft_isdigit();
+	test_ft_isalnum();
+	test_ft_isascii();
+	test_ft_isprint();
+	test_ft_toupper();
+	test_ft_tolower();
+	test_ft_puts();
+	test_ft_strlen();
 	test_ft_memset();
 	test_ft_memcpy();
 	test_ft_strdup();
@@ -237,6 +236,7 @@ void test_ft_toupper (void)
 	printf("%c --> %c\n", '`', ft_toupper('`'));
 	printf("%c --> %c\n", '{', ft_toupper('{'));
 	printf("%c --> %c\n", 'A', ft_toupper('A'));
+	printf("%c --> %c\n", 'Z', ft_toupper('Z'));
 	printf("%c --> %c\n", '2', ft_toupper('2'));
 	printf("%c --> %c\n", '-', ft_toupper('-'));
 }
@@ -256,6 +256,7 @@ void test_ft_tolower (void)
 	printf("%c --> %c\n", '`', ft_tolower('`'));
 	printf("%c --> %c\n", '{', ft_tolower('{'));
 	printf("%c --> %c\n", 'A', ft_tolower('A'));
+	printf("%c --> %c\n", 'Z', ft_tolower('Z'));
 	printf("%c --> %c\n", '2', ft_tolower('2'));
 	printf("%c --> %c\n", '-', ft_tolower('-'));
 }
@@ -379,10 +380,10 @@ void test_ft_strdup (void)
 	printf(" original string : [%p] [%s]\n", tata, tata);
 	printf("duplicate string : [%p] [%s]\n", toto, toto);
 
-	printf("test with null :\n");
-	printf("titi = %s\n", titi);
-	titi = strdup(NULL);
-	printf("titi = %s\n", titi);
+	// printf("test with null :\n");
+	// printf("titi = %s\n", titi);
+	// titi = strdup(NULL);
+	// printf("titi = %s\n", titi);
 
 }
 
