@@ -22,11 +22,6 @@ SRC				= $(DIR_SRC)/ft_isalpha.s \
 				  $(DIR_SRC)/ft_memcpy.s \
 				  $(DIR_SRC)/ft_strdup.s \
 				  $(DIR_SRC)/ft_cat.s
-				#   $(DIR_SRC)/ft_indexof.s
-				#   $(DIR_SRC)/ft_strequ.s \
-				#   $(DIR_SRC)/ft_strchr.s \
-				#   $(DIR_SRC)/ft_strclr.s \
-				#   $(DIR_SRC)/ft_strcmp.s \
 
 DIR_SRC			= src
 DIR_INC			= inc

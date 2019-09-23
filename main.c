@@ -31,11 +31,6 @@ void test_ft_strlen		(void);
 void test_ft_memset		(void);
 void test_ft_memcpy		(void);
 void test_ft_strdup		(void);
-void test_ft_indexof	(void);
-// void test_ft_strequ		(void);
-// void test_ft_strchr		(void);
-// void test_ft_strclr		(void);
-// void test_ft_strcmp		(void);
 
 int main (void)
 {
@@ -53,11 +48,6 @@ int main (void)
 	test_ft_memset();
 	test_ft_memcpy();
 	test_ft_strdup();
-	// test_ft_indexof();
-	// test_ft_strequ();
-	// test_ft_strchr();
-	// test_ft_strclr();
-	// test_ft_strcmp();
 
 	printf("\n");
 	return (0);
@@ -386,89 +376,6 @@ void test_ft_strdup (void)
 	// printf("titi = %s\n", titi);
 
 }
-
-// void test_ft_indexof (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_indexof
-// 	** -------------------------------------------------------------------------
-// 	**/
-
-// 	logit("ft_indexof");
-
-// 	printf("index of [%c] into [%s] = %2d\n", 'c', "adcde", ft_indexof('c', "abcde"));
-// 	printf("index of [%c] into [%s] = %2d\n", 'c', "ooooo", ft_indexof('c', "ooooo"));
-// 	printf("index of [%c] into [%s] = %2d\n", 'o', "ooooo", ft_indexof('o', "ooooo"));
-
-// }
-
-// void test_ft_strequ (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strequ
-// 	** -------------------------------------------------------------------------
-// 	**/
-
-// 	logit("ft_strequ");
-
-// 	printf("[abc] == [def] ? %d\n", ft_strequ("abc", "def"));
-// 	printf("[abc] == [abc] ? %d\n", ft_strequ("abc", "abc"));
-// 	printf("[]    == [def] ? %d\n", ft_strequ("", "def"));
-
-// }
-
-// void test_ft_strchr (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strchr
-// 	** -------------------------------------------------------------------------
-// 	**/
-
-// 	logit("ft_strchr");
-
-// 	printf("searching [%c] into [%s] ==> [%s]\n", 'a', "zzzzzaxxxxxx", ft_strchr("zzzzzaxxxxxx", 'a'));
-// 	printf("searching [%c] into [%s] ==> [%s]\n", 'b', "zzzzzaxxxxxx", ft_strchr("zzzzzaxxxxxx", 'b'));
-// 	printf("searching [%c] into [%s] ==> [%s]\n", 0, "zzzzzaxxxxxx", ft_strchr("zzzzzaxxxxxx", 0));
-
-// }
-
-// void test_ft_strclr (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strclr
-// 	** -------------------------------------------------------------------------
-// 	**/
-
-// 	logit("ft_strclr");
-
-// 	char toto[] = "yalah";
-
-// 	printf("before strclr = [%s]\n", toto);
-// 	ft_strclr(toto);
-// 	printf(" after strclr = [%s]\n", toto);
-
-// }
-
-// void test_ft_strcmp (void)
-// {
-// 	/**
-// 	** -------------------------------------------------------------------------
-// 	** ft_strcmp
-// 	** -------------------------------------------------------------------------
-// 	**/
-
-// 	logit("ft_strcmp");
-
-// 	printf("cmp [abc] [def] ? %d\n", ft_strcmp("abc", "def"));
-// 	printf("cmp [abc] [abc] ? %d\n", ft_strcmp("abc", "abc"));
-// 	printf("cmp [def] []    ? %d\n", ft_strcmp("def", ""));
-
-
-// }
 
 void logit (char * str)
 {
