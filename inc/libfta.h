@@ -21,14 +21,4 @@ char *				ft_strdup	(const char *s1);
 
 int					ft_cat		(int fd);
 
-/**
-** Bonus functions
-*/
-
-int					ft_indexof	(char c, char * str);
-int					ft_strequ	(char const *s1, char const *s2);
-char *				ft_strchr	(const char *s, int c);
-void				ft_strclr	(char *s);
-int					ft_strcmp	(char const *s1, char const *s2);
-
 #endif

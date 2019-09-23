@@ -1,22 +1,23 @@
 ;nasm -fmacho64 ft_cat.s && ld -macosx_version_min 10.7.0 -lSystem -o ft_cat ft_cat.o && ./ft_cat file
-default rel
 
 section .bss
 buffer:   resb 64   ; reserve 64 bytes
 
 section .text
-global start
+global _ft_cat
 
-start:
-  cmp qword [rsp], 1
-  je stdin
+_ft_cat:
+  default rel
 
-  mov rax, 0x2000005  ; open()
-  mov rdi, [16 + rsp] ; argv[1]
-  mov rsi, 0x0        ; O_RDONLY
-  syscall
+  ; cmp rdi, 1
+  ; je stdin
 
-  jc term
+  ; mov rax, 0x2000005  ; open()
+  ; mov rdi, [16 + rsp] ; argv[1]
+  ; mov rsi, 0x0        ; O_RDONLY
+  ; syscall
+
+  ; jc term
   mov r12, rax        ; save file descriptor in r12
 
 loop_start:
